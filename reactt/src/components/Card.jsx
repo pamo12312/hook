@@ -1,4 +1,5 @@
 import React from 'react';
+import StarRating from "./rating.jsx";
 
 const coursesData = [
     {
@@ -34,18 +35,14 @@ const Course = ({ course }) => {
                     <div className={"titlee"}>
                         <div className="new">
                             <h2>{name}</h2>
-                            <p>🧍Speaker: {speaker}</p>
+                            <p> {speaker}</p>
                         </div>
                     </div>
                 </div>
                 <div className={"a"}>
-                    <div className={"star"}>a</div>
-                    <div className={"star"}>a</div>
-                    <div className={"star"}>a</div>
-                    <div className={"star"}>a</div>
-                    <div className={"star"}>a</div>
 
 
+<StarRating/>
                 </div>
             </div>
 

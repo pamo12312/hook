@@ -1,0 +1,10 @@
+
+
+.star {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.star:hover {
+    color: gold;
+}
