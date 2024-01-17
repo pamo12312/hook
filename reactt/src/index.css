@@ -1,10 +1,67 @@
 
 
-.star {
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.star:hover {
-    color: gold;
+.courses-card {
+    display: flex;
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+
 }
+
+.image-container {
+    margin-right: 10px;
+}
+
+.text-container {
+    flex-grow: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titlee {
+    display: flex;
+    flex-direction: column;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.writer {
+    color: rebeccapurple;
+}
+
+.img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+
