@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const Star = ({ selected, onClick }) => (
     <span className={`star ${selected ? 'selected' : ''}`} onClick={onClick}>
         {selected ? '★' : '☆'}

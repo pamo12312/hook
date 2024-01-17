@@ -1,4 +1,3 @@
-// FilmCard.jsx
 import React from 'react';
 import StarRating from './Star';
 

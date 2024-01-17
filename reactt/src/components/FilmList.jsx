@@ -1,4 +1,3 @@
-// FilmList.jsx
 import React from 'react';
 import FilmCard from './FilmCard';
 
