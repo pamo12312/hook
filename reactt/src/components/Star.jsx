@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+
 const Star = ({ selected, onClick }) => (
     <span className={`star ${selected ? 'selected' : ''}`} onClick={onClick}>
-        {selected ? '★' : '☆'}
-    </span>
+    {selected ? '★' : '☆'}
+  </span>
 );
 
 const StarRating = ({ totalStars = 5 }) => {
@@ -12,17 +13,18 @@ const StarRating = ({ totalStars = 5 }) => {
         setSelectedStars(index + 1);
     };
 
-    return (
-        <div>
-            {[...Array(totalStars)].map((_, index) => (
-                <Star
-                    key={index}
-                    selected={index < selectedStars}
-                    onClick={() => handleStarClick(index)}
-                />
-            ))}
-        </div>
-    );
+    const stars = [];
+    for (let index = 0; index < totalStars; index++) {
+        stars.push(
+            <Star
+                key={index}
+                selected={index < selectedStars}
+                onClick={() => handleStarClick(index)}
+            />
+        );
+    }
+
+    return <div>{stars}</div>;
 };
 
 export default StarRating;
