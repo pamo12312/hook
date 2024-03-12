@@ -6,7 +6,9 @@ const Star = ({ selected, onClick }) => (
   </span>
 );
 
-const StarRating = ({ totalStars = 5 }) => {
+const StarRating = () => {
+
+    const totalStars = 5;
     const [selectedStars, setSelectedStars] = useState(0);
 
     const handleStarClick = (index) => {
